@@ -1,0 +1,36 @@
+html {
+  font-size: 62.5%;
+}
+
+body, body * {
+  font-family: $paragraph;
+}
+
+body {
+  background: url(../assets/img/bg.jpg) repeat center center;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.main-body {
+  min-height: calc(100vh - 6rem);
+  // height: 100vh;
+}
+
+.content {
+  padding: 1rem 1.5rem;
+  margin: $nav-offset auto 0;
+  max-width: 1350px;
+
+  p {
+    margin: 0 0 1rem;
+    @include font(1.6rem, 1.5em, 400);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 1rem;
+    @include font(2.4rem, 1.5em, 400);
+  }
+}

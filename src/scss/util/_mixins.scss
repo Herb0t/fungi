@@ -1,0 +1,26 @@
+@mixin flex-center-b {
+	display: flex;
+	justify-content: center;
+}
+
+@mixin font($fontSize, $lineHeight: 1.5em, $fontWeight: 400) {
+	font-size: $fontSize;
+	line-height: $lineHeight;
+	font-weight: $fontWeight;
+}
+
+@mixin bs-radius-top {
+	border-radius: $radius $radius 0 0;
+}
+
+@mixin bs-radius-bottom {
+	border-radius: 0 0 $radius $radius;
+}
+
+@mixin bs-radius-right-bottom {
+	border-radius: 0 $radius 0 $radius;
+}
+
+@mixin bs-radius-left-bottom {
+	border-radius: $radius 0 $radius 0;
+}

@@ -1,0 +1,96 @@
+.about-us {
+  padding: 2rem 0;
+  h1 {
+    display: none;
+  }
+  .about-us-intro {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .right-side {
+    .col-md-6 {
+      text-align: center;
+      > .img-container img {
+        max-width: 250px;
+      }
+    }
+    .about-video img {
+      width: 100%;
+      height: auto
+    }
+  }
+  .about-icons {
+    width: 60%;
+    margin: 0 auto;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .left-side {
+    .shortcuts {
+      .bs-btn.btn {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  .about-lower {
+    background-color: $secondColour;
+    margin: 1rem -0.75rem;
+    width: unset;
+    padding: 2rem 0;
+    .row {
+      > * {
+        color: #fff;
+      }
+    }
+    h4 {
+      @include font(1.8rem, 400);
+      text-transform: uppercase;  
+    }
+  }
+  p {
+    @include font(1.8rem, 400);
+  }
+  .quote {
+    width: 60%;
+    margin: auto;
+    font-style: italic;
+    span {
+      font-style: normal;
+    }
+  }
+
+  @include media(">=small") {
+    .right-side {
+      .col-md-6 {
+        &:first-child img{
+          margin-right: 0;
+        }
+        &:last-child img{
+          margin-left: 0;
+        }
+        > .img-container img {
+          max-width: 150px;
+        }
+      }
+    }
+  }
+  @include media(">=medium") {
+    .right-side {
+      .col-md-6 {
+        > .img-container img {
+          max-width: 200px;
+        }
+      }
+      .about-video {
+        text-align: center;
+        img {
+          width: unset;
+          height: auto
+        }
+      }
+    }
+  }
+}

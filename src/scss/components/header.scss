@@ -1,0 +1,52 @@
+.header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 8rem;
+	padding: 0;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	z-index: 50;
+
+  nav {
+    text-align: center;
+
+    a {
+      display: inline-block;
+      height: $nav-height;
+      @include font(2rem, $nav-height);
+      line-height: $nav-height;
+      padding: 0 1.5rem;
+      min-width: 5rem;
+      text-align: center;
+      background: rgba(255,255,255,0);
+      text-decoration: none;
+      color: #FFF;
+      will-change: background-color;
+      font-family: $title;
+
+      &:hover,
+      &:active {
+	      background: rgba(0,0,0,0.2);
+      }
+
+      &.active {
+        background: rgba(0,0,0,0.4);
+      }
+
+      &.homelink {
+        width: 17.5rem;
+        background: url(../assets/svg/logo.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      h1, h2 {
+        margin: 0;
+        opacity: 0;
+      }
+    }
+  }
+
+}

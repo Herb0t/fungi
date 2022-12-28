@@ -1,0 +1,16 @@
+$breakpoints: (
+  small: 768px,
+  medium: 992px,
+  large: 1200px,
+  xlarge: 1350px,
+);
+
+$radius: 1rem;
+
+// font types
+$title: 'Space Mono', monospace;
+$paragraph: 'Roboto', sans-serif;
+
+// sizes 
+$nav-height: 8rem;
+$nav-offset: $nav-height;

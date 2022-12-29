@@ -1,8 +1,11 @@
 import { h } from 'preact';
 
-const Block = () => (
-	<div class="block">
-		<p>This is the Block component.</p>
+const Block = (props) => (
+	<div class={"block type-" + props.type}>
+    <div class="block-content">
+      {props.type === "block" ? <h3>{props.title}</h3> : null}
+      <p>{props.content}</p>
+    </div>
 	</div>
 );
 

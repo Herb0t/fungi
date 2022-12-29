@@ -1,0 +1,12 @@
+
+.blocks {
+  .block {
+    background: #FFF;
+    margin: 0 auto 1rem;
+    .block-content {
+      padding: 1rem 1.5rem;
+      margin: 0 auto;
+      @include font(1.6rem, 1.5em, 400);
+    }
+  }
+}
